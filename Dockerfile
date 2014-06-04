@@ -1,5 +1,6 @@
 FROM crosbymichael/python
 
+RUN apt-get install -y libffi-dev libssl-dev
 RUN pip install butterfly
 RUN echo "root\nroot\n" | passwd root
 
